@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe - Inicio</title>
+</head>
+<body>
+  <h1 id="welcomeMessage">¡Bienvenido a Swipe!</h1>
+  <input type="text" id="searchInput" placeholder="Buscar...">
+  
+  <script>
+    // JavaScript para cambiar el mensaje de bienvenida
+    document.addEventListener('DOMContentLoaded', function() {
+      var welcomeMessage = document.getElementById('welcomeMessage');
+      welcomeMessage.textContent = '¡Bienvenido a Swipe!';
+    });
+  </script>
+</body>
+</html>
