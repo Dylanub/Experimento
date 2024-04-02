@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe - Inicio</title>
+</head>
+<body>
+  <h1 id="welcomeMessage">¡Bienvenido a Swipe!</h1>
+  <input type="text" id="searchInput" placeholder="Buscar...">
+  <button onclick="searchVideos()">Buscar</button>
+  <div id="searchResults"></div>
+  
+  <script>
+    function searchVideos() {
+      var searchInput = document.getElementById('searchInput').value;
+      var searchResults = document.getElementById('searchResults');
+      
+      // Your search logic here (e.g., querying a database or an API)
+      // For now, let's just display a message indicating what was searched for
+      
+      if (searchInput.trim() !== '') {
+        // Display search results
+        searchResults.innerHTML = 'Mostrando resultados para: ' + searchInput;
+      } else {
+        // Display message if nothing was searched for
+        searchResults.innerHTML = 'No se encontró nada';
+      }
+    }
+  </script>
+</body>
+</html>
